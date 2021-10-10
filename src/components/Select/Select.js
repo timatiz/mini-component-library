@@ -8,6 +8,14 @@ import { getDisplayedValue } from "./Select.helpers";
 const Container = styled.select`
   padding: 10px 6px;
   width: auto;
+  border-radius: 0.4rem;
+  background: ${COLORS.gray50};
+  border-color: transparent;
+  color: ${COLORS.gray500};
+
+  &:hover {
+    color: black;
+  }
 `;
 
 const Select = ({ label, value, onChange, children }) => {
